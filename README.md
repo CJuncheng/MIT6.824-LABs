@@ -1,6 +1,35 @@
-# MIT6.824-LABs
+# MIT6.824-LABs(6.5840)
 <h2 align="left">目录</h2>
-[toc]
+<!--[toc]-->
+- [MIT6.824-LABs(6.5840)](#mit6824-labs65840)
+	- [Lab 1: MapReduce](#lab-1-mapreduce)
+		- [MapReduce结构](#mapreduce结构)
+		- [Coordinator](#coordinator)
+		- [Worker](#worker)
+	- [Lab 2: Raft](#lab-2-raft)
+		- [Raft 主体](#raft-主体)
+		- [Leader Election](#leader-election)
+		- [Append Entries](#append-entries)
+		- [Persistence](#persistence)
+		- [Install Snapshot](#install-snapshot)
+		- [被上层服务调用的API](#被上层服务调用的api)
+	- [Lab 3: Fault-tolerant Key/Value Service](#lab-3-fault-tolerant-keyvalue-service)
+		- [Client](#client)
+		- [Servers](#servers)
+	- [Lab 4: Sharded Key/Value Service](#lab-4-sharded-keyvalue-service)
+		- [ShardCtrler](#shardctrler)
+		- [ShardKV](#shardkv)
+			- [客户端Clerk](#客户端clerk)
+			- [服务端Server](#服务端server)
+				- [ShardKV 主体](#shardkv-主体)
+				- [日志类型](#日志类型)
+				- [日志应用](#日志应用)
+				- [读写服务](#读写服务)
+				- [配置更新](#配置更新)
+				- [分片迁移](#分片迁移)
+				- [分片清理](#分片清理)
+				- [空日志检测](#空日志检测)
+
 
 MIT 6.824(Spring 2022, 6.5840)的四个实验实现。
 
